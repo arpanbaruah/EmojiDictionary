@@ -63,7 +63,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a mask" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwS-ys-5SH">
-                                <rect key="frame" x="133.5" y="316" width="108" height="20.5"/>
+                                <rect key="frame" x="133.5" y="316" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category : Animal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odw-Vd-bkA">
+                                <rect key="frame" x="119.5" y="357" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthYear :  2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-E3-loI">
+                                <rect key="frame" x="124.5" y="398" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbi-Fq-Pz4">
+                                <rect key="frame" x="166" y="429" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,12 +91,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wwS-ys-5SH" firstAttribute="top" secondItem="HuT-zc-u0q" secondAttribute="bottom" constant="48.5" id="2VA-c9-5mW"/>
+                            <constraint firstItem="Odw-Vd-bkA" firstAttribute="top" secondItem="wwS-ys-5SH" secondAttribute="bottom" constant="20" id="G7Z-27-BNa"/>
                             <constraint firstItem="HuT-zc-u0q" firstAttribute="top" secondItem="WUI-x0-Pz3" secondAttribute="bottom" constant="40" id="KI8-fO-Ky3"/>
+                            <constraint firstItem="PCV-E3-loI" firstAttribute="centerX" secondItem="EAg-ep-qdl" secondAttribute="centerX" id="khg-Qj-Njf"/>
+                            <constraint firstItem="PCV-E3-loI" firstAttribute="top" secondItem="Odw-Vd-bkA" secondAttribute="bottom" constant="20" id="laa-3V-mEB"/>
+                            <constraint firstItem="Odw-Vd-bkA" firstAttribute="centerX" secondItem="EAg-ep-qdl" secondAttribute="centerX" id="uIz-bK-DfN"/>
                             <constraint firstItem="wwS-ys-5SH" firstAttribute="centerX" secondItem="EAg-ep-qdl" secondAttribute="centerX" id="xm9-Lj-owS"/>
                             <constraint firstItem="HuT-zc-u0q" firstAttribute="centerX" secondItem="EAg-ep-qdl" secondAttribute="centerX" id="zfN-g8-kVd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emojiBirthYear" destination="Odw-Vd-bkA" id="Oq9-RQ-CJ6"/>
+                        <outlet property="emojiCategory" destination="PCV-E3-loI" id="JJ5-tH-G9F"/>
+                        <outlet property="emojiDefinition" destination="wwS-ys-5SH" id="FPb-sX-cad"/>
                         <outlet property="emojiLabel" destination="HuT-zc-u0q" id="mT8-UH-8JJ"/>
                     </connections>
                 </viewController>

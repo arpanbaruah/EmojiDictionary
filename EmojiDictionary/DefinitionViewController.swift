@@ -11,16 +11,20 @@ import UIKit
 class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "NO EMOJI"
+    @IBOutlet weak var emojiDefinition: UILabel!
+    @IBOutlet weak var emojiCategory: UILabel!
+    @IBOutlet weak var emojiBirthYear: UILabel!
+    var emoji = Emoji()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        print(emoji)
-        
-        emojiLabel.text = emoji
+       emojiLabel.text = emoji.stringEmoji
+       emojiDefinition.text = "Definition : \(emoji.definition)"
+       emojiCategory.text = "Category : \(emoji.category)"
+       emojiBirthYear.text = "Origination Date : \(emoji.birthYear)"
         
         
         
